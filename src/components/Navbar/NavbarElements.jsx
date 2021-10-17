@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link, Link as LinkR } from "react-router-dom";
+import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
@@ -88,7 +88,7 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  @media(max-width:768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
