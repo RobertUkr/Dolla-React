@@ -4,18 +4,16 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const SidebarContainer = styled.aside`
-position:fixed;
-z-index:999;
-width:100%;
-height:100%;
-background:#0d0d0d;
-display:grid:
-align-items:center;
-top:0;
-left:0;
- transition: all .3s easy-in-out;
- opacity:${({ isOpen }) => (isOpen ? "100%" : "0")};
- top:${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  transition: all .6s ease-out;
+  top: 0;
+  left: 0;
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -53,7 +51,7 @@ export const SidebarLink = styled(LinkS)`
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  transition: 0.2s easy-in-out;
+  transition: all .3s ease-out;
   color: #fff;
   cursor: pointer;
   max-width: 120px;
@@ -61,7 +59,7 @@ export const SidebarLink = styled(LinkS)`
 
   &:hover {
     color: #01bf71;
-    transition: 0.2s easy-in-out;
+    transition: all .3s ease-out;
   }
 `;
 
@@ -78,11 +76,11 @@ export const SidebarRoute = styled(LinkR)`
   color: #010606;
   outline: none;
   cursor: pointer;
-  transition: all 0.2s easy-in-out;
+  transition: all .3s ease-out;
   text-decoration: none;
 
   &:hover {
-    transition: all 0.2s easy-in-out;
+    transition: all .3s ease-out;
     background: #fff;
     color: #010606;
   }
