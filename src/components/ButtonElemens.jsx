@@ -15,6 +15,7 @@ export const Button = styled(Link)`
   align-items:center;
   transition: all .3s ease-out;
   text-decoration: none;
+  max-width:210px;
 
   &:hover{
     transition: all .2s easy-in-out;

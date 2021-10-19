@@ -17,7 +17,7 @@ export const HeroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100vh;
+    // height: 100vh;
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.2) 0%,
@@ -34,7 +34,7 @@ export const HeroBg = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   overflow: hidden;
 `;
 
@@ -93,9 +93,11 @@ export const HeroBtnWrapper = styled.div`
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
+ 
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
+
 `;
