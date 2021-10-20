@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 
-export const Button = styled(Link)`
+export const Button = styled(LinkS)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? "#01BF71" : "#010606")};
   white-space: nowrap;
@@ -16,6 +16,7 @@ export const Button = styled(Link)`
   transition: all .3s ease-out;
   text-decoration: none;
   max-width:210px;
+  cursor:pointer;
 
   &:hover{
     transition: all .2s easy-in-out;

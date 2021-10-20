@@ -1,9 +1,12 @@
+import SignIn from "../components/Signin";
+import ScrollToTop from "../components/Signin/ScrollToTop";
+
 const SignInPage = () => {
   return (
-    <div className="">
-      <h1>Sign in page</h1>
-    </div>
+    <>
+      <ScrollToTop />
+      <SignIn />
+    </>
   );
 };
-
 export default SignInPage;
